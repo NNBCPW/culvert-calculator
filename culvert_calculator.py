@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Title of the app
-st.title("Culvert Pipe Set Calculator")
+st.title("BCPW Construction Inspector Culvert Pipe Set Calculator")
 
 # Input fields
 pipe_size = st.number_input("Pipe Size (inches)", value=15, step=1)
