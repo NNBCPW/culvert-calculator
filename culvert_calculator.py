@@ -22,4 +22,5 @@ st.write("""
 2. Multiply the result by the ratio (e.g., 4:1 or 6:1).
 3. Divide by 12 to convert inches to feet.
 4. The result is the Set Length in feet.
+- Created by Nick N.
 """)
