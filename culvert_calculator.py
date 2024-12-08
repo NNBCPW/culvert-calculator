@@ -13,7 +13,7 @@ set_length = (pipe_size + cover) * ratio / 12
 
 # Display result with larger font size
 st.markdown("<h3>Set Length (feet)</h3>", unsafe_allow_html=True)
-st.markdown(f"<p style='font-size:30px; color:blue;'>{round(set_length, 2)}</p>", unsafe_allow_html=True)
+st.markdown(f"<p style='font-size:30px; color:white;'>{round(set_length, 2)}</p>", unsafe_allow_html=True)
 
 # Notes
 st.markdown("### Notes")
