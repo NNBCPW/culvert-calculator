@@ -23,4 +23,5 @@ st.write("""
 3. Divide by 12 to convert inches to feet.
 4. The result is the Set Length in feet.
 - Created by Nick N.
+App was created on Github using Python V 1.12a
 """)
