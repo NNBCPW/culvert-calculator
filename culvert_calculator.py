@@ -23,5 +23,12 @@ st.write("""
 3. Divide by 12 to convert inches to feet.
 4. The result is the Set Length in feet.
 
--App was created by Nick N. on Github using Python V 1.12a
-""")
+# Add "Created by" text at the very bottom
+st.markdown(
+    """
+    <div style="text-align: center; font-size: 12px; margin-top: 20px; color: gray;">
+        Created by: NN
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
