@@ -22,13 +22,14 @@ st.write("""
 2. Multiply the result by the ratio (e.g., 4:1 or 6:1).
 3. Divide by 12 to convert inches to feet.
 4. The result is the Set Length in feet.
+""")
 
 # Add "Created by" text at the very bottom
 st.markdown(
-    ""
+    """
     <div style="text-align: center; font-size: 12px; margin-top: 20px; color: gray;">
         Created by: NN
     </div>
-    "",
+    """,
     unsafe_allow_html=True,
 )
