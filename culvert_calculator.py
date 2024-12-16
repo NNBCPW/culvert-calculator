@@ -25,10 +25,10 @@ st.write("""
 
 # Add "Created by" text at the very bottom
 st.markdown(
-    """
+    ""
     <div style="text-align: center; font-size: 12px; margin-top: 20px; color: gray;">
         Created by: NN
     </div>
-    """,
+    "",
     unsafe_allow_html=True,
 )
