@@ -2,7 +2,7 @@ import streamlit as st
 import datetime
 
 # Title of the app
-st.title("BCPW Construction Inspector Culvert Pipe Set Calculator")
+st.title("BCPW Culvert Pipe Set Calculator")
 
 # Input fields
 pipe_size = st.number_input("Pipe Size (inches)", min_value=1, value=15, step=1)
@@ -42,7 +42,7 @@ st.markdown(
         Created by: NN <br>
         <a href="mailto:Nicholas.nabholz@bexar.org?subject=Feedback%20on%20BCPW%20Elevation%20Calc&body=Hello,%0A%0AI%20would%20like%20to%20provide%20feedback%20on%20the%20app.%0A%0A" 
            style="color: white; text-decoration: none;">
-            For support, please email me. Thanks!
+            For support, please click this. Thanks!
         </a>
     </div>
     """,
