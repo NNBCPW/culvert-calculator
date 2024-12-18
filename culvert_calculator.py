@@ -22,7 +22,7 @@ else:
     st.markdown(f"<p style='font-size:40px; color:red;'>{round(set_length, 2)}</p>", unsafe_allow_html=True)
 
     # Display Diameter + 12 result with larger font size
-    st.markdown("<h3>Diameter + 12\" (inches)</h3>", unsafe_allow_html=True)
+    st.markdown("<h3>Diameter + 12\" (inches) Flat spot at toe down</h3>", unsafe_allow_html=True)
     st.markdown(f"<p style='font-size:40px; color:red;'>{round(diameter_plus_12, 2)}</p>", unsafe_allow_html=True)
 
 # Notes
