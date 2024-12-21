@@ -6,8 +6,8 @@ st.title("BCPW Culvert Pipe Set Calculator")
 # Blue and White DOS-style design
 st.markdown("""
     <style>
-        body {
-            background-color: rgba(41, 0, 216, 1);
+        body, .main, .stApp {
+            background-color: rgba(41, 0, 216, 1) !important;
             color: white;
             font-family: 'Courier New', Courier, monospace;
         }
@@ -21,11 +21,16 @@ st.markdown("""
         }
         .input-field, .stNumberInput, .stSlider {
             color: white;
-            background-color: rgba(41, 0, 216, 1);
+            background-color: rgba(41, 0, 216, 1) !important;
             border: 2px solid white;
             padding: 5px;
             margin-bottom: 10px;
             width: 100%;
+        }
+        input[type="number"] {
+            background-color: rgba(41, 0, 216, 1) !important;
+            color: white !important;
+            border: 2px solid white;
         }
         h3, h1, h2, label {
             color: white;
