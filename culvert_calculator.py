@@ -1,12 +1,41 @@
 import streamlit as st
-import datetime
 
 # Title of the app
 st.title("BCPW Culvert Pipe Set Calculator")
 
+# DOS-style design
+st.markdown("""
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .result {
+            font-size: 20px;
+            color: green;
+            background-color: black;
+            border: 2px solid green;
+            padding: 10px;
+            display: inline-block;
+        }
+        .input-field {
+            color: green;
+            background-color: black;
+            border: 2px solid green;
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        h3, h1, h2, label {
+            color: green;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Input fields
-pipe_size = st.number_input("Pipe Size (inches)", min_value=1, value=15, step=1)
-cover = st.number_input("Cover (inches)", min_value=1, value=9, step=1)
+pipe_size = st.number_input("Pipe Size (inches)", min_value=1, value=15, step=1, format="%.0f")
+cover = st.number_input("Cover (inches)", min_value=1, value=9, step=1, format="%.0f")
 ratio = st.slider("Ratio (e.g., 4 for 4:1)", min_value=1, max_value=10, value=4, step=1)
 
 # Validating Inputs
@@ -17,13 +46,13 @@ else:
     set_length = (pipe_size + cover) * ratio / 12
     diameter_plus_12 = pipe_size + 12
 
-    # Display Set Length result with larger font size
+    # Display Set Length result in DOS-style format
     st.markdown("<h3>Set Length (feet)</h3>", unsafe_allow_html=True)
-    st.markdown(f"<p style='font-size:40px; color:red;'>{round(set_length, 2)}</p>", unsafe_allow_html=True)
+    st.markdown(f"<div class='result'>Set Length: {round(set_length, 2)} feet</div>", unsafe_allow_html=True)
 
-    # Display Diameter + 12 result with larger font size
+    # Display Diameter + 12 result in DOS-style format
     st.markdown("<h3>Diameter + 12\" (inches)</h3>", unsafe_allow_html=True)
-    st.markdown(f"<p style='font-size:40px; color:red;'>{round(diameter_plus_12, 2)}</p>", unsafe_allow_html=True)
+    st.markdown(f"<div class='result'>Diameter + 12: {round(diameter_plus_12, 2)} inches</div>", unsafe_allow_html=True)
 
 # Notes
 st.markdown("### Notes")
@@ -38,10 +67,10 @@ st.write("""
 # Footer directly added at the end
 st.markdown(
     """
-    <div style="width: 100%; background-color: black; color: white; text-align: center; padding: 10px; margin-top: 20px;">
+    <div style="width: 100%; background-color: black; color: green; text-align: center; padding: 10px; margin-top: 20px;">
         Created by: NN <br>
         <a href="mailto:Nicholas.nabholz@bexar.org?subject=Feedback%20on%20BCPW%20Elevation%20Calc&body=Hello,%0A%0AI%20would%20like%20to%20provide%20feedback%20on%20the%20app.%0A%0A" 
-           style="color: white; text-decoration: none;">
+           style="color: green; text-decoration: none;">
             For support, please click this. Thanks!
         </a>
     </div>
