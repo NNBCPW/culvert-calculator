@@ -32,6 +32,11 @@ st.markdown("""
             color: white !important;
             border: 2px solid white;
         }
+        .stNumberInput button {
+            background-color: rgba(41, 0, 216, 1) !important;
+            color: white !important;
+            border: 2px solid white !important;
+        }
         h3, h1, h2, label {
             color: white;
         }
