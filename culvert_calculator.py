@@ -7,21 +7,21 @@ st.title("BCPW Culvert Pipe Set Calculator")
 st.markdown("""
     <style>
         body {
-            background-color: blue;
+            background-color: rgba(41, 0, 216, 1);
             color: white;
             font-family: 'Courier New', Courier, monospace;
         }
         .result {
             font-size: 20px;
             color: white;
-            background-color: blue;
+            background-color: rgba(41, 0, 216, 1);
             border: 2px solid white;
             padding: 10px;
             display: inline-block;
         }
-        .input-field {
+        .input-field, .stNumberInput, .stSlider {
             color: white;
-            background-color: blue;
+            background-color: rgba(41, 0, 216, 1);
             border: 2px solid white;
             padding: 5px;
             margin-bottom: 10px;
@@ -33,7 +33,7 @@ st.markdown("""
         .notes {
             font-size: 14px;
             color: white;
-            background-color: blue;
+            background-color: rgba(41, 0, 216, 1);
             padding: 10px;
             border: 2px solid white;
             margin-top: 20px;
@@ -77,7 +77,7 @@ st.markdown("""
 # Footer directly added at the end
 st.markdown(
     """
-    <div style="width: 100%; background-color: blue; color: white; text-align: center; padding: 10px; margin-top: 20px;">
+    <div style="width: 100%; background-color: rgba(41, 0, 216, 1); color: white; text-align: center; padding: 10px; margin-top: 20px;">
         Created by: NN <br>
         <a href="mailto:Nicholas.nabholz@bexar.org?subject=Feedback%20on%20BCPW%20Elevation%20Calc&body=Hello,%0A%0AI%20would%20like%20to%20provide%20feedback%20on%20the%20app.%0A%0A" 
            style="color: white; text-decoration: none;">
